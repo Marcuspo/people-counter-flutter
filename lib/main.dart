@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: "Contador de Pessoas",
     home: Home()
     ));
@@ -34,8 +35,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return
-        Stack(
+    return new Scaffold(body: Stack(
         children: <Widget>[
           Image.asset(
             "images/restaurant.jpg",
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               Text(
                 "Pessoas: $_people", 
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 49,color: Colors.blue, fontWeight: FontWeight.bold),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -81,6 +81,7 @@ class _HomeState extends State<Home> {
             ],
           )
         ],
+        )
       );
-  }
+    }
 }
