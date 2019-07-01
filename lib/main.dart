@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
     } else if(_people <= 10){
       _infoTeste = "Pode entrar!";
     } else {
-      _infoTeste = "Lotado!!!!!! Pode entrar mais ninguém!"
+      _infoTeste = "Lotado!!!!!! ";
     }
 
     });
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return 
+    return
         Stack(
         children: <Widget>[
           Image.asset(
